@@ -18,7 +18,7 @@
                     <p>VIEW</p>   
                 </div>
                 <div class="navleft">
-                    <p>Features</p>
+                    <a href="#go">Gallery</a>
                     <button class="btn">GET EARLY ACCESS</button>
                 </div>
             </div>
@@ -42,22 +42,34 @@
 
             </div>
             <div class="cont">
+                <section id="go">
                 <div class="tulisan">
-                    <p>Keindahan Lahir Dari</p>
-                    <ul>
-                        <li><p>Hati</p></li>
-                        <li><p>Perbuatan</p></li>
-                        <li><p>Omongan</p></li>
-                    </ul>
-                </div>
-                <div class="gambar">
-                    <img src="media/orang.jpg" alt="">
-                </div>
-            </div>
-            <div class="kosong">
-
+                    <p>Bingung Arep Diisi Apa</p>
+                    <p>Tak Isi Gallery Malah Elek</p>
+                    <p>Ya wis lah</p>
+                            </div>
+                <div class="gallery"></div>
+                <div class="gallery"></div>
+                          </section>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+    </script>
 </body>
 </html>

@@ -52,11 +52,13 @@ body, *{
     font-size: 15px;
     
 }
-.navleft > p{
+.navleft > a{
     padding: 50px;
     color: white;
     font-weight: bold;
     font-size: 15px;
+    text-decoration-style: none;
+    text-decoration-line: none;
 }
 .content{
     display: flex;
@@ -114,22 +116,19 @@ body, *{
 }
 .cont{
     display: flex;
-    flex: 5 ;
-    flex-direction: row;
+    width: 100%;
+    background:url("media/road_2.jpg");
+    background-size: cover;
+    min-height: 100vh; 
     align-items: center;
     justify-content: space-around;
-    background: #77a1e5;
-    height: 600px;
+}
 
-    
-}
-.kosong{
-    display: flex;
-    flex: 2;
-    height: 600px;
-}
-.cont > .tulisan{
+.cont >#go > .tulisan{
+    width: 100%;
     font-size: 25px;
+    text-align: center;
+    justify-content: center;
     
     
 }
@@ -138,7 +137,11 @@ body, *{
     height: 500px;
     
 }
-.cont > .tulisan > p{
+.cont > #go > .tulisan > p{
     font-weight: bold;
-    margin-bottom: 30px;
+    color: #050c18;
+    margin-bottom: 0;
+    font-size: 45px;
+    padding: 10px;
+    font-family: 'Courgette', sans-serif;
 }
